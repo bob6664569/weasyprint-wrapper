@@ -1,27 +1,25 @@
-# Weasyprint Wrapper
+# weasyprint
 
-A fixed node wrapper module for use with the weasyprint Python package.
+*A NodeJS wrapper module for Weasyprint Python package (HTML to PDF converter).*
 
-This module is a fork of [repo](https://github.com/dills122/weasyprint-wrapper) with minor updates and reuploaded back to npm.
+This module is a fork of [dills122/weasyprint-wrapper](https://github.com/dills122/weasyprint-wrapper) with fixes, minor updates and reuploaded back to npm as [weasyprint](https://www.npmjs.com/package/weasyprint).
 
-
+## Getting started
 Install the package (Python3 required):
 ```
 pip3 install weasyprint
 ```
 
-Add the NodeJS wrapper to your project:
+Add this NodeJS wrapper to your project:
 ```
 npm i weasyprint
 ```
 
-Example usage:
+## Usage
+Example:
 
 ```javascript
 const weasyprint = require('weasyprint');
-
-// Optionnal: specify the location of weasyprint cli if not in PATH
-weasyprint.command = ;
 
 // URL, specifying the format & default command to spawn weasyprint
 const resBuffer = await weasyprint('http://google.com/', { 
@@ -40,3 +38,6 @@ try {
     console.error(err);
 }
 ```
+
+## License
+MIT
