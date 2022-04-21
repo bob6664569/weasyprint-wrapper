@@ -18,7 +18,7 @@ npm i weasyprint
 Example usage:
 
 ```javascript
-const weasyprint = require('weasyprint-wrapper');
+const weasyprint = require('weasyprint');
 
 // Optionnal: specify the location of weasyprint cli if not in PATH
 weasyprint.command = ;
