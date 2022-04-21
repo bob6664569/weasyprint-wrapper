@@ -1,6 +1,6 @@
 {
   "name": "weasyprint",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Weasyprint Wrapper for NodeJS (Python PDF Generator from HTML)",
   "main": "index.js",
   "keywords": [

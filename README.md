@@ -1,8 +1,8 @@
 # Weasyprint Wrapper
 
-A fixed node wrapper module for use with the weasyprint Python package.
+A NodeJS wrapper module for Weasyprint Python package.
 
-This module is a fork of [repo](https://github.com/dills122/weasyprint-wrapper) with minor updates and reuploaded back to npm.
+This module is a fork of [repo](https://github.com/dills122/weasyprint-wrapper) with fixes, minor updates and reuploaded back to npm.
 
 
 Install the package (Python3 required):
@@ -19,9 +19,6 @@ Example usage:
 
 ```javascript
 const weasyprint = require('weasyprint');
-
-// Optionnal: specify the location of weasyprint cli if not in PATH
-weasyprint.command = ;
 
 // URL, specifying the format & default command to spawn weasyprint
 const resBuffer = await weasyprint('http://google.com/', { 
