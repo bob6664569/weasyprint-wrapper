@@ -17,7 +17,7 @@ const weasyprint = async (input, { command = 'weasyprint', ...opts } = {}) => {
     const isUrl = /^(https?|file):\/\//.test(input);
     const args = [command];
 
-    Object.entries(opts).forEach((key, value) => {
+    Object.entries(opts).forEach(([key, value]) => {
         args.push(key.length === 1 ? '-' + key : '--' + dasher(key));
         // only add value if it is not a boolean
         if (value !== false && value !== true) {
